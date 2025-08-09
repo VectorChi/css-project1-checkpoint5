@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.flex-col,
+.flex-row {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.input,
+.area-input {
+  gap: 0.4rem;
+}
+
+.input {
+  width: 50%;
+}
+.a .input label {
+  letter-spacing: -0.02rem;
+}
+.input input,
+.area-input textarea {
+  font-size: 1rem;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid grey;
+}
+
+body {
+  align-items: center;
+  gap: 10rem;
+  padding: 2% 0;
+}
+
+header {
+  gap: 8rem;
+  align-items: center;
+  width: 100%;
+}
+
+.top-nav-wrapper {
+  align-items: center;
+  gap: 1.5rem;
+  border: solid 0.2px #1a1a1a;
+  border-radius: 4rem;
+  padding: 1rem 2rem;
+}
+.top-nav-wrapper li a {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.hero {
+  align-items: center;
+  gap: 1.25rem;
+  width: 50%;
+}
+.hero img {
+  width: 4rem;
+}
+.hero button,
+.contact-form button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-text {
+  align-items: center;
+  gap: 0.4rem;
+}
+.hero-text p {
+  font-size: 2rem;
+}
+.hero-text h1 {
+  font-size: 5.2rem;
+  text-align: center;
+  letter-spacing: -0.2rem;
+  line-height: 100%;
+}
+
+main {
+  gap: 6rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#about,
+#playlist,
+#work,
+#resume,
+#contact {
+  justify-content: space-between;
+}
+.section-title {
+  font-size: 1.5rem;
+  width: fit-content;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
+}
+
+.about-content {
+  gap: 1rem;
+  width: 70%;
+}
+.about-content p {
+  font-size: 1.25rem;
+  letter-spacing: -0.02rem;
+  line-height: 140%;
+}
+
+.work-list {
+  gap: 1.5rem;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+.work-list li {
+  gap: 0.3rem;
+  padding: 0.5rem 0rem;
+  border-bottom: 0.5px solid #1a1a1a;
+  cursor: pointer;
+}
+.work-list li h3 {
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
+}
+
+#resume table {
+  width: 70%;
+  border-spacing: 0.8rem;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 0.3px solid grey;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.6rem 0;
+}
+
+th {
+  font-size: medium;
+  font-weight: 600;
+}
+.contact-form {
+  gap: 1.5rem;
+  width: 70%;
+}
+.name-email {
+  gap: 2rem;
+  width: 100%;
+}
+
+.contact-form button {
+  font-size: 1.12rem;
+  width: max-content;
+}
+
+footer {
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  #about,
+  #playlist,
+  #work,
+  #resume,
+  #contact {
+    flex-direction: column;
+  }
+  .hero {
+    width: 90%;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+  }
+  .hero-text p {
+    font-size: 1.25;
+    letter-spacing: -0.02rem;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .about-content,
+  .work-list,
+  #resume table,
+  .contact-form {
+    width: 100%;
+  }
+}

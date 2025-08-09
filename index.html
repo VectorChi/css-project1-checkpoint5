@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adimchi Oka -Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="flex-col">
+    <header class="flex-col" id=" home">
+        <nav>
+            <ul class="flex-row top-nav-wrapper">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex-col hero">
+            <img src="https://www.adimchi.com/images/me/hero.webp" alt="me">
+            <div class="flex-col hero-text">
+                <p>Adimchi Oka</p>
+                <h1>Web Designer and Developer based in Lagos</h1>
+
+            </div>
+            <a href="#contact"> <button>Say Hi</button></a>
+        </div>
+    </header>
+
+    <main class="flex-col">
+        <section class="flex-row" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="flex-col about-content">
+                <p>Adimchi is a senior product designer, frontend engineer and mentor currently at Cowrywise, helping
+                    over
+                    1.5- million
+                    customers build wealth.
+                </p>
+
+                <p>His curiosity for design and technology was sparked in 2015 while learning C++ in sophomore year. By
+                    final year, he had
+                    pivoted into brand design, helping startups define brand voices and create visual assets for growth.
+                </p>
+
+                <p>
+                    He later transitioned into product design, building expertise in design systems, B2C/B2B/B2B2C
+                    fintech,
+                    service design,
+                    SaaS, and web3 infrastructure . Today, he works at the intersection of design and engineering,
+                    shaping
+                    thoughtful,
+                    human-centered products through research, design thinking, and user insights.
+                </p>
+                <p>He plays the cello (semi-professionally, lol), enjoys classical music, travelling, trying new food,
+                    mobile gaming (CODM)
+                    and photography.</p>
+            </div>
+        </section>
+
+
+        <section class="flex-row" id="playlist">
+            <h2 class="section-title"> Playlist </h2>
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/4mwnV9E3DHkklU1psMgCmB?utm_source=generator" width="70%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </section>
+
+        <section class="flex-row" id="work">
+            <h2 class="section-title">Projects</h2>
+            <ul class="flex-col work-list">
+                <li class="flex-col">
+                    <h3>Integrating simplified investment on MoMo.</h3>
+                    <p>A simplified mini-app offering Cowrywise investment services to MTN MoMo PSB customers.</p>
+                </li>
+
+                <li class="flex-col">
+                    <h3>How GitHub inspired Cowrywise’s security update.</h3>
+                    <p>Implementing GitHub-inspired session management feature, helped Cowrywise cut unauthorised
+                        account access and
+                        transactions.</p>
+                </li>
+                <li class="flex-col">
+                    <h3>Host dynamic polls, collate votes from anywhere.</h3>
+                    <p>Provotar is a saas platform that eases voting and collation for small-medium scale polling
+                        bodies..</p>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <section class="flex-row" id="resume">
+            <h2 class="section-title
+            ">Work Experience</h2>
+            <table>
+
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>From (MM/YY)</th>
+                    <th>To (MM/YY)</th>
+                </tr>
+                <tr>
+                    <td>Cowrywise</td>
+                    <td>Senior Product Designer </td>
+                    <td>05/22</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>TechChak</td>
+                    <td>Product Designer </td>
+                    <td>05/21</td>
+                    <td>05/22</td>
+                </tr>
+            </table>
+
+        </section>
+
+
+
+
+        <section class="flex-row" id=contact>
+
+            <h2 class="section-title">Contact Me</h2>
+
+
+            <form class="flex-col contact-form">
+                <div class="flex-row name-email">
+                    <div class="flex-col input">
+                        <label for="fullName">Full name</label>
+                        <input type="text" id="fullName" placeholder="Jon Bellion" required>
+                    </div>
+
+                    <div class="flex-col input">
+                        <label for="email">Your email address</label>
+                        <input type="email" id="email" placeholder="jon@email.com" required>
+                    </div>
+                </div>
+
+                <div class="flex-col area-input">
+                    <label for="message">Your message</label>
+                    <textarea name="message" id="" cols="30" rows="6" id="message"></textarea>
+                </div>
+
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="flex-col">
+        <p>&copy; 2023 Adimchi Oka. All rights reserved.</p>
+        <p>Follow me on social media:</p>
+        <ul>
+            <li><a href="https://x.com/vector_chi" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
